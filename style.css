@@ -206,6 +206,32 @@ body {
     cursor: pointer;
 }
 
+.portfolio-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+}
+
+.portfolio-link button {
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+    background-color: #A638F6;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    text-decoration: none;
+    border-style:1px solid;
+    text-decoration: none;
+}
+
+.portfolio-link button:hover {
+    cursor: pointer;
+}
+
 @media (max-height: 900px) {
 
     #pwResult {
