@@ -1,0 +1,238 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #16111A;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin-top: 20vh;
+    height: 70vh;
+    width: 399px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+#pwResult {
+    background-color: #2D2039;
+    height: 60px;
+    width: 350px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#pwResult input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: whitesmoke;
+}
+
+#pwResult button {
+    background-color: transparent;
+    color: #A638F6;
+    border: none;
+    cursor: pointer;
+}
+
+#logo {
+    margin-top: 30px;
+}
+#topText {
+    color: whitesmoke;
+}
+#pwSettings {
+    background-color: #2D2039;
+    width: 350px;
+    height: 400px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#pwSettings input[type="range"]{
+    width: 100%;
+}
+
+#password {
+    font-size: 20px;
+
+}
+
+.rangeMeter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.rangeMeter label {
+    color: whitesmoke;
+}
+
+#slider {
+    -webkit-appearance: none;
+    background: linear-gradient(90deg, rgb(166, 56, 246) 50%, rgba(133, 133, 133, 0.349) 50%);
+    background-color: #332441da;
+    height: 7px;
+    border-radius: 20px;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+#slider:hover {
+    opacity: 1;
+}
+
+#slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: whitesmoke;
+    border-radius: 50%;
+}
+
+#slideLength {
+    font-size: 24px;
+    color: #A638F6;
+
+}
+
+.checkboxLable {
+    color: whitesmoke;
+}
+
+.checkboxAll {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+}
+
+.checkboxAll label {
+    display: block;
+    margin-bottom: 10px;
+}
+.check{
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: rgb(178, 143, 211);
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+}
+
+.check:checked {
+    background-color: #A638F6;
+}
+
+.check:after {
+    font-family: "font Awesome 6 free";
+    font-weight: 900;
+    font-size: 12px;
+    content: "\f00c";
+    color: white;
+    display: none;
+}
+
+.check:hover {
+    background-color: #9131d6;
+}
+
+.check:checked:after {
+    display: block;
+}
+
+
+.strengthContainer {
+    background-color: #A638F6;
+    height: 40px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+#strenghtLable {
+    margin: 0 20px ;
+}
+#strength {
+    color: whitesmoke;
+    margin: 0 20px;
+}
+
+.meterContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+.sMeter {
+    justify-content:center ;
+    align-items: start;
+    height: 30px;
+    width: 9px;
+    background-color: gray;
+    margin: 1px;
+    display: flex;
+}
+
+
+.settingBoxes {
+    background-color: #A638F6;
+    height: 40px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+@media (max-height: 900px) {
+
+    #pwResult {
+        background-color: #2D2039;
+        height: 40px;
+        width: 250px;
+        margin-bottom: 30px;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #pwResut button {
+        width: 10px;
+        height: 10px;
+    }
+
+    #pwSettings {
+        background-color: #2D2039;
+        width: 250px;
+        height: 60%;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+}

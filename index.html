@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" sizes="32x32" href="./assets/images/techover.ico" />
+  
+    <title>Lösenords Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h2 id="topText">Password Generator</h2>
+      <div id="pwResult">
+        <input type="text" id="password" value="password1234" readomly>
+        <button onclick="copyPassword()"><img src="projektlosenordsgenerator4-230331-141450/projekt-losenordsgenerator 4/images/copy-icon.svg" alt=""></button>
+      </div>
+      <div id="pwSettings">
+        <div class="rangeMeter">
+          <label for="length">charactere Length</label>
+          <span id="slideLength">10</span>
+        </div>
+        <input type="range" id="slider" min="5" max="21" class="slideContainer">
+      <div class="checkboxAll">
+        <label class="checkboxLable" for=""><input class="check" type="checkbox" id="Upper"> Include Uppercase Letters</label>
+        <label class="checkboxLable" for=""><input class="check" type="checkbox" id="Lower"> Include Lowercase Letters</label>
+        <label class="checkboxLable" for=""><input class="check" type="checkbox" id="Numbers"> Include Numbers</label>    
+        <label class="checkboxLable" for=""><input class="check" type="checkbox" id="Symbols"> Include Symbols</label>
+    </div>
+        <div class="strengthContainer">
+          <label for="" id="strenghtLable">strength</label>
+          
+          <div class="meterContainer">
+            <p id="strength">Great</p>
+            <div class="sMeter" id="sM1"></div>
+            <div class="sMeter" id="sM2"></div>
+            <div class="sMeter" id="sM3"></div>
+            <div class="sMeter" id="sM4"></div>
+          </div>
+        </div>
+        <button class="settingBoxes" id="generate">Generate</button>
+      </div>
+      <div>
+        <img src="projektlosenordsgenerator4-230331-141450/projekt-losenordsgenerator 4/images/techover-logo.png" id="logo" alt="">
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
+
